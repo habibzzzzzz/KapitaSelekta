@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
-import BlogSection from './components/BlogSection';
-import StatisticsSection from './components/ContactSection';
+import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import Navbar from './components/Navbar';
-import Portfolio from './components/Portfolio';
 import Preloader from './components/Preloader';
-import ServicesSection from './components/ServicesSection';
+import ResearchSection from './components/ResearchSection';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -110,10 +108,9 @@ function App() {
       <Preloader onLoadingComplete={handleLoadingComplete} />
       <Navbar isLoading={isLoading} />
       <HeroSection isLoading={isLoading} />
-      <ServicesSection />
-      <Portfolio />
-      <BlogSection />
-      <StatisticsSection />
+      <AboutSection />
+      <ResearchSection />
+   
       <Footer />
     </div>
   );
